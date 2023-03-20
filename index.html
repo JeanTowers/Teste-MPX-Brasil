@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
+
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+ defer></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="scrypt.js" defer></script>
+
+    <title>MPX</title>
+
+</head>
+
+<body class="p-2">
+    <div class="container">
+        <header class="container-fluid">
+            <div class="row py-2">
+                <div class="col">
+                    <div class="BG">
+                        <a class="bgHover" href="">Aumentar fonte</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="BG">
+                        <a href="">Alto Contraste</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="BG">
+                        <a href="">Mapa do Site</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="BG">
+                        <a href="">Fonte para dislexia</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="BG">
+                        <a href="">Entenda a Acessibilidade</a>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <form class="d-flex BG" role="search">
+                        <input class="input border-0 p-2 " type="search" placeholder="Pesquise no Site"
+                            aria-label="Search">
+                        <button class="btn p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container-fluid rounded-4 p-0 menuLogo" >
+        <div class="container">
+            <div class="row pt-2 ">
+                <div class="col">
+                    <img src="assets/Ouvidoria.svg" alt="">
+                </div>
+                <div class="col">
+                    <div class="row p-2">
+                        <div class="col text-center navbarItem1">
+                            <figure>
+                                <img src="assets/ouv.svg" alt="Ouvidoria e-SIC">
+                                <figcaption>
+                                    Ouvidoria e-SIC
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col text-center navbarItem1">
+                            <figure>
+                                <img src="assets/transp.svg" alt="Portal Transparência">
+                                <figcaption>
+                                    Portal
+                                    Transparência
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col text-center navbarItem1" id="carta">
+                            <figure class="figure">
+                                <img src="assets/carta.svg" alt="Carta de Serviços ao Cidadão">
+                                <figcaption>
+                                    Carta de Serviços
+                                    ao Cidadão
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid" id="navList">
+            <div class="container">
+                <div class="row py-2 text-center align-items-center">
+                    <div class="col ">
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" id="Prefeitura" data-bs-toggle="dropdown"
+                                aria-expanded="false">Prefeitura</a>
+                            <ul class="dropdown-menu text-center" aria-labelledby="Prefeitura">
+                                <li>1</li>
+                                <li>2</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" id="Município" data-bs-toggle="dropdown"
+                                aria-expanded="false">Município</a>
+                            <ul class="dropdown-menu text-center" aria-labelledby="Município">
+                                <li>1</li>
+                                <li>2</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" id="Secretarias" data-bs-toggle="dropdown"
+                                aria-expanded="false">Secretarias</a>
+                            <ul class="dropdown-menu text-center" aria-labelledby="Secretarias">
+                                <li>1</li>
+                                <li>2</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="">
+                            <a href="">Notícias</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" id="Imprensa" data-bs-toggle="dropdown"
+                                aria-expanded="false">Imprensa</a>
+                            <ul class="dropdown-menu text-center" aria-labelledby="Imprensa">
+                                <li>1</li>
+                                <li>2</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" id="Contato" data-bs-toggle="dropdown"
+                                aria-expanded="false">Contato</a>
+                            <ul class="dropdown-menu text-center" aria-labelledby="Contato">
+                                <li>1</li>
+                                <li>2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-0">
+            <div class="slider">
+                <img src="assets/Vitrine.png" alt="">
+                <img src="assets/Vitrine.png" alt="">
+                <img src="assets/Vitrine.png" alt="">
+            </div>
+        </div>
+
+        <div class="container p-1">
+            <div class=" container slider2">
+                <div class="col text-center navbarItem1">
+                    <figure>
+                        <img src="assets/ouv.svg" alt="Ouvidoria e-SIC">
+                        <figcaption>
+                            Ouvidoria e-SIC
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col text-center navbarItem1">
+                    <figure>
+                        <img src="assets/transp.svg" alt="Portal Transparência">
+                        <figcaption>
+                            Portal
+                            Transparência
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col text-center navbarItem1" id="carta">
+                    <figure class="figure">
+                        <img src="assets/carta.svg" alt="Carta de Serviços ao Cidadão">
+                        <figcaption>
+                            Carta de Serviços
+                            ao Cidadão
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col text-center navbarItem1">
+                    <figure>
+                        <img src="assets/ouv.svg" alt="Ouvidoria e-SIC">
+                        <figcaption>
+                            Ouvidoria e-SIC
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col text-center navbarItem1">
+                    <figure>
+                        <img src="assets/transp.svg" alt="Portal Transparência">
+                        <figcaption>
+                            Portal
+                            Transparência
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col text-center navbarItem1" id="carta">
+                    <figure class="figure">
+                        <img src="assets/carta.svg" alt="Carta de Serviços ao Cidadão">
+                        <figcaption>
+                            Carta de Serviços
+                            ao Cidadão
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col text-center navbarItem1">
+                    <figure>
+                        <img src="assets/ouv.svg" alt="Ouvidoria e-SIC">
+                        <figcaption>
+                            Ouvidoria e-SIC
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col text-center navbarItem1">
+                    <figure>
+                        <img src="assets/transp.svg" alt="Portal Transparência">
+                        <figcaption>
+                            Portal
+                            Transparência
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col text-center navbarItem1" id="carta">
+                    <figure class="figure">
+                        <img src="assets/carta.svg" alt="Carta de Serviços ao Cidadão">
+                        <figcaption>
+                            Carta de Serviços
+                            ao Cidadão
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col text-center navbarItem1">
+                    <figure>
+                        <img src="assets/ouv.svg" alt="Ouvidoria e-SIC">
+                        <figcaption>
+                            Ouvidoria e-SIC
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col text-center navbarItem1">
+                    <figure>
+                        <img src="assets/transp.svg" alt="Portal Transparência">
+                        <figcaption>
+                            Portal
+                            Transparência
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col text-center navbarItem1" id="carta">
+                    <figure class="figure">
+                        <img src="assets/carta.svg" alt="Carta de Serviços ao Cidadão">
+                        <figcaption>
+                            Carta de Serviços
+                            ao Cidadão
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <span class="h3 p-2 colorBlue">
+                Notícias
+            </span>
+        </div>
+        <div class="container pb-5">
+            <div class="row gap-4">
+                <div class="col  borderImg p-0 position-relative">
+                    <img class="w-100" src="assets/foto-center.svg" alt="">
+                    <span  class="position-absolute p-1 px-3 date">13/04/2020</span>
+                    <span class="h5 p-2 mx-4 float-start">
+                        Ted Sarandos nomeado co-CEO da Netflix
+                    </span>
+                </div>
+                <div class="col  borderImg p-0 position-relative">
+                    <img class="w-100" src="assets/foto-center2.svg" alt="">
+                    <span class="position-absolute p-1 px-3 date">14/04/2020</span>
+                    <span class="h5 p-2 mx-4 float-start">
+                        O aplicativo de meditação Calm está tendo seu próprio programa HBO Max cheio de celebridades
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container pb-5">
+          <div class="borderImg p-2">
+            <div class="slider3 m-0">
+                <div class="border-end  px-2">
+                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">15/04/2020</span>
+                    <img class="w-100" src="assets/space.svg" alt="">
+                    <figcaption>
+                        Spaceflight Inc. lança novo veículo de transferência orbital para foguete via satélite
+                    </figcaption>
+                </div>
+                <div class="border-end px-2">
+                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">16/04/2020</span>
+                    <img class="w-100" src="assets/17-filmes.svg" alt="">
+                    <figcaption>
+                        17 filmes icônicos com classificações surpreendentemente baixas
+                    </figcaption>
+                </div>
+                <div class="border-end px-2">
+                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">16/04/2020</span>
+                    <img class="w-100" src="assets/netflix.svg" alt="">
+                    <figcaption>
+                        Por que as ações da Netflix caíram 10%
+                    </figcaption>
+                </div>
+                <div class="border-end px-2">
+                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">17/04/2020</span>
+                    <img class="w-100" src="assets/apple.svg" alt="">
+                    <figcaption>
+                        Apple abre outra megaloja na China em meio às críticas de William Barr
+                    </figcaption>
+                </div>
+                <div class="border-end px-2">
+                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">15/04/2020</span>
+                    <img class="w-100" src="assets/space.svg" alt="">
+                    <figcaption>
+                        Spaceflight Inc. lança novo veículo de transferência orbital para foguete via satélite
+                    </figcaption>
+                </div>
+                <div class="border-end px-2">
+                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">16/04/2020</span>
+                    <img class="w-100" src="assets/17-filmes.svg" alt="">
+                    <figcaption>
+                        17 filmes icônicos com classificações surpreendentemente baixas
+                    </figcaption>
+                </div>
+                <div class="border-end px-2">
+                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">16/04/2020</span>
+                    <img class="w-100" src="assets/netflix.svg" alt="">
+                    <figcaption>
+                        Por que as ações da Netflix caíram 10%
+                    </figcaption>
+                </div>
+                <div class="border-end px-2">
+                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">17/04/2020</span>
+                    <img class="w-100" src="assets/apple.svg" alt="">
+                    <figcaption>
+                        Apple abre outra megaloja na China em meio às críticas de William Barr
+                    </figcaption>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="container text-center pb-5">
+        <button class="bg-warning rounded-4 border-0 p-2 px-4 fs-6 fw-semibold">
+            <span>
+                Veja mais notícias
+              </span>
+        </button>
+
+    </div>
+    <div class="container pb-5">
+        <div class="row ">
+            <div class="col text-center">
+                <img class="w-100" src="assets/banner 01.svg" alt="">
+            </div>
+            <div class="col text-center">
+                <img class="w-100" src="assets/banner 01.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid rounded-4 p-0 menuLogo">
+        <div class="container p-3 ">
+            <span class="h4 text-white">
+                Galeria de Fotos
+              </span>
+        </div>
+        <div class="container-fluid">
+            <div class="slider4">
+                <div class="px-2">
+                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">17/04/2020</span>
+                    <img class="w-100" src="assets/apple.svg" alt="">
+                    <figcaption>
+                        Apple abre outra megaloja na China em meio às críticas de William Barr
+                    </figcaption>
+                </div>
+                <div class="px-2">
+                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">17/04/2020</span>
+                    <img class="w-100" src="assets/apple.svg" alt="">
+                    <figcaption>
+                        Apple abre outra megaloja na China em meio às críticas de William Barr
+                    </figcaption>
+                </div>
+                <div class="px-2">
+                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">17/04/2020</span>
+                    <img class="w-100" src="assets/apple.svg" alt="">
+                    <figcaption>
+                        Apple abre outra megaloja na China em meio às críticas de William Barr
+                    </figcaption>
+                </div>
+                <div class="px-2">
+                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">17/04/2020</span>
+                    <img class="w-100" src="assets/apple.svg" alt="">
+                    <figcaption>
+                        Apple abre outra megaloja na China em meio às críticas de William Barr
+                    </figcaption>
+                </div>
+                <div class="px-2">
+                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">17/04/2020</span>
+                    <img class="w-100" src="assets/apple.svg" alt="">
+                    <figcaption>
+                        Apple abre outra megaloja na China em meio às críticas de William Barr
+                    </figcaption>
+                </div>
+                <div class="px-2 position-relative">
+                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">17/04/2020</span>
+                    <img class="w-100" src="assets/apple.svg" alt="">
+                    <figcaption class="position-absolute px-2">
+                        Apple abre outra megaloja na China em meio às críticas de William Barr
+                    </figcaption>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center pb-5">
+            <button class="bg-warning rounded-4 border-0 p-2 px-4 fs-6 fw-semibold">
+                <span>
+                    Veja mais notícias
+                  </span>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
