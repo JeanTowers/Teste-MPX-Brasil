@@ -194,3 +194,20 @@ left: 2%;
   border-width: 10px;
 }
 
+.slider4 .slick-slide {
+  transform: scale(0.82);
+  transition: 0.3s;
+}
+
+.slider4 .slick-center {
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+.grey {
+  color: #616161;
+}
+
+.small {
+  font-size: small;
+}
