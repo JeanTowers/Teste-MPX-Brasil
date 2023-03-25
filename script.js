@@ -37,8 +37,8 @@ $(function(){
         slidesToShow: 3,
         infinite: true,
         centerMode: true,
-        prevArrow: '<img src="assets/Btn-Esq.svg" class="btnSlider3" id="btnEsq3" alt="Anterior">',
-        nextArrow: '<img src="assets/Btn-Dir.svg" class="btnSlider3" id="btnDir3" alt="Proximo">',
+        prevArrow: '<img src="assets/Btn-Esq.svg" class="btnSlider3" id="btnEsq4" alt="Anterior">',
+        nextArrow: '<img src="assets/Btn-Dir.svg" class="btnSlider3" id="btnDir4" alt="Proximo">',
     });
 })
 

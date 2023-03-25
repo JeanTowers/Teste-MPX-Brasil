@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
 a {
@@ -54,7 +56,7 @@ a {
   opacity: 1; /* Firefox */
 }
 
-.menuLogo {
+.bgBlue-200 {
     background: #01579b;
 }
 
@@ -122,8 +124,16 @@ left: 2%;
 #btnDir3 {
   right: -3%;
 }
+
+#btnEsq4 {
+  left: 2%;
+}
   
-#navList {
+#btnDir4 {
+  right: 2%;
+}
+  
+.bgBlue-100 {
   background: #0277bd;
 }
 
@@ -246,3 +256,13 @@ left: 2%;
   width: 64px;
 }
   
+
+#cidade {
+  background-image: url(assets/cidade.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
