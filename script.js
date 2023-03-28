@@ -22,7 +22,7 @@ $(function(){
 $(function(){
     $(".slider3").slick({
         slidesToScroll: 2,
-        // autoplay: true,
+        autoplay: true,
         slidesToShow: 4,
         infinite: true,
         prevArrow: '<img src="assets/Btn-Esq.svg" class="btnSlider3" id="btnEsq3" alt="Anterior">',
@@ -33,7 +33,6 @@ $(function(){
 $(function(){
     $(".slider4").slick({
         slidesToScroll: 1,
-        // autoplay: true,
         slidesToShow: 3,
         infinite: true,
         centerMode: true,
@@ -42,12 +41,11 @@ $(function(){
     });
 })
 
-const videoYtbLazy = document.getElementById('videoYtbLazy');
+const videoYtb = document.getElementById('videoYtb');
 
-videoYtbLazy.addEventListener('click' , snippetYtbLazyPlay);
+videoYtb.addEventListener('click' , YtbPlay);
 
-function snippetYtbLazyPlay(evt) {
-    evt.currentTarget.removeEventListener('click', snippetYtbLazyPlay);
-
-    evt.currentTarget.innerHTML = `<iframe class="p-2 rounded-2" width="560" height="315" src="https://www.youtube.com/embed/${evt.currentTarget.dataset.id}?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+function YtbPlay(evt) {
+    evt.currentTarget.removeEventListener('click', YtbPlay);
+    evt.currentTarget.innerHTML = `<iframe class="p-2 rounded-5" width="560" height="315" src="https://www.youtube.com/embed/${evt.currentTarget.dataset.id}?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
 }

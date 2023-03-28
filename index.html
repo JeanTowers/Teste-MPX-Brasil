@@ -5,734 +5,873 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site desenvolvido para processo seletivo MPX Brasil">
 
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/icon.png" />
 
-
-
+    <!-- SLICK -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" defer></script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
         defer></script>
+
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="script.js" defer></script>
 
-    <title>MPX</title>
+    <title>MPX Brasil</title>
 
 </head>
 
-<body class="p-2">
-    <div class="container">
-        <header class="container-fluid">
-            <div class="row py-2">
-                <div class="col">
-                    <div class="BG">
-                        <a class="bgHover" href="">Aumentar fonte</a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="BG">
-                        <a href="">Alto Contraste</a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="BG">
-                        <a href="">Mapa do Site</a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="BG">
-                        <a href="">Fonte para dislexia</a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="BG">
-                        <a href="">Entenda a Acessibilidade</a>
-                    </div>
-                </div>
-                <div class="col">
-
-                    <form class="d-flex BG" role="search">
-                        <input class="input border-0 p-2 " type="search" placeholder="Pesquise no Site"
-                            aria-label="Search">
-                        <button class="btn p-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-search" viewBox="0 0 16 16">
-                                <path
-                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                            </svg>
-                        </button>
-                    </form>
-
-                </div>
-            </div>
-        </header>
-    </div>
-    <div class="container-fluid rounded-4 p-0 bgBlue-200">
+<body class="px-3">
+    <header>
         <div class="container">
-            <div class="row pt-2 ">
-                <div class="col">
-                    <img src="assets/Ouvidoria.svg" alt="">
-                </div>
-                <div class="col">
-                    <div class="row p-2">
-                        <div class="col text-center navbarItem1">
-                            <figure>
-                                <img src="assets/ouv.svg" alt="Ouvidoria e-SIC">
-                                <figcaption>
-                                    Ouvidoria e-SIC
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col text-center navbarItem1">
-                            <figure>
-                                <img src="assets/transp.svg" alt="Portal Transparência">
-                                <figcaption>
-                                    Portal
-                                    Transparência
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col text-center navbarItem1" id="carta">
-                            <figure class="figure">
-                                <img src="assets/carta.svg" alt="Carta de Serviços ao Cidadão">
-                                <figcaption>
-                                    Carta de Serviços
-                                    ao Cidadão
-                                </figcaption>
-                            </figure>
+            <div class="container-fluid">
+                <div class="row py-2">
+                    <div class="col">
+                        <div class="BG">
+                            <a class="bgHover" href="">Aumentar fonte</a>
                         </div>
                     </div>
-                </div>
+                    <div class="col">
+                        <div class="BG">
+                            <a href="">Alto Contraste</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="BG">
+                            <a href="">Mapa do Site</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="BG">
+                            <a href="">Fonte para dislexia</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="BG">
+                            <a href="">Entenda a Acessibilidade</a>
+                        </div>
+                    </div>
+                    <div class="col">
 
+                        <form class="d-flex BG" role="search">
+                            <input class="input border-0 p-2 " type="search" placeholder="Pesquise no Site"
+                                aria-label="Search">
+                            <button class="btn p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="container-fluid bgBlue-100">
+        <div class="container-fluid rounded-4 p-0 bgBlue-200">
             <div class="container">
-                <div class="row py-2 text-center align-items-center">
-                    <div class="col ">
-                        <div class="dropdown">
-                            <a class="btn dropdown-toggle" href="#" id="Prefeitura" data-bs-toggle="dropdown"
-                                aria-expanded="false">Prefeitura</a>
-                            <ul class="dropdown-menu text-center" aria-labelledby="Prefeitura">
-                                <li>1</li>
-                                <li>2</li>
-                            </ul>
-                        </div>
+                <div class="row pt-2 ">
+                    <div class="col">
+                        <img src="assets/Ouvidoria.svg" alt="">
                     </div>
                     <div class="col">
-                        <div class="dropdown">
-                            <a class="btn dropdown-toggle" href="#" id="Município" data-bs-toggle="dropdown"
-                                aria-expanded="false">Município</a>
-                            <ul class="dropdown-menu text-center" aria-labelledby="Município">
-                                <li>1</li>
-                                <li>2</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="dropdown">
-                            <a class="btn dropdown-toggle" href="#" id="Secretarias" data-bs-toggle="dropdown"
-                                aria-expanded="false">Secretarias</a>
-                            <ul class="dropdown-menu text-center" aria-labelledby="Secretarias">
-                                <li>1</li>
-                                <li>2</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="">
-                            <a href="">Notícias</a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="dropdown">
-                            <a class="btn dropdown-toggle" href="#" id="Imprensa" data-bs-toggle="dropdown"
-                                aria-expanded="false">Imprensa</a>
-                            <ul class="dropdown-menu text-center" aria-labelledby="Imprensa">
-                                <li>1</li>
-                                <li>2</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="dropdown">
-                            <a class="btn dropdown-toggle" href="#" id="Contato" data-bs-toggle="dropdown"
-                                aria-expanded="false">Contato</a>
-                            <ul class="dropdown-menu text-center" aria-labelledby="Contato">
-                                <li>1</li>
-                                <li>2</li>
-                            </ul>
+                        <div class="row p-2">
+                            <div class="col text-center navbarItem1">
+                                <figure>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none"
+                                        viewBox="0 0 28 28">
+                                        <path fill="#000"
+                                            d="M25.667 2.333H2.333c-.619 0-1.212.273-1.65.76C.246 3.579 0 4.238 0 4.926v18.148c0 .688.246 1.347.683 1.833.438.486 1.031.76 1.65.76h23.334c.618 0 1.212-.274 1.65-.76.437-.486.683-1.145.683-1.833V4.926c0-.688-.246-1.347-.683-1.833-.438-.487-1.032-.76-1.65-.76zM9.333 6.223c.929 0 1.819.409 2.475 1.138.657.73 1.025 1.719 1.025 2.75s-.368 2.02-1.025 2.75c-.656.73-1.546 1.139-2.475 1.139-.928 0-1.818-.41-2.475-1.139-.656-.73-1.025-1.719-1.025-2.75s.37-2.02 1.025-2.75c.657-.729 1.547-1.139 2.475-1.139zm7 15.555h-14v-1.296c0-2.593 4.667-4.019 7-4.019 2.334 0 7 1.426 7 4.018v1.297zm4.492-5.185h1.925l1.75 2.592-2.333 2.593c-1.517-1.296-2.649-3.098-3.174-5.185-.21-.83-.326-1.699-.326-2.593 0-.894.116-1.763.326-2.593.525-2.1 1.657-3.888 3.174-5.185L24.5 8.815l-1.75 2.592h-1.925c-.257.817-.408 1.686-.408 2.593s.151 1.776.408 2.593z" />
+                                    </svg>
+                                    <figcaption>
+                                        <strong>Ouvidoria e-SIC</strong>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col text-center navbarItem1">
+                                <figure>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none"
+                                        viewBox="0 0 28 28">
+                                        <path fill="#000"
+                                            d="M18.05 12.359c3.61 0 6.499 2.746 6.499 6.18 0 1.208-.361 2.348-.997 3.295L28 26.091 25.993 28l-4.506-4.216c-.996.59-2.18.934-3.436.934-3.61 0-6.499-2.746-6.499-6.18 0-3.433 2.888-6.179 6.498-6.179zm0 2.746c-.957 0-1.875.362-2.552 1.006s-1.058 1.517-1.058 2.427c0 .911.38 1.784 1.058 2.428.677.644 1.595 1.006 2.553 1.006.957 0 1.875-.362 2.552-1.006s1.058-1.517 1.058-2.428c0-.91-.38-1.783-1.058-2.427-.677-.644-1.595-1.006-2.553-1.006zM5.777 16.48v2.746h2.888c.202 2.129 1.155 4.037 2.614 5.493h-8.39c-.766 0-1.5-.29-2.042-.804C.304 23.398 0 22.7 0 21.972V2.746C0 1.222 1.285 0 2.888 0h20.217c.766 0 1.5.29 2.042.804.542.515.846 1.214.846 1.942v11.027c-.846-1.275-2.018-2.326-3.407-3.054-1.39-.728-2.95-1.108-4.535-1.106-1.834 0-3.553.508-4.997 1.373H5.776v2.746h4.332c-.52.824-.953 1.758-1.198 2.747H5.776zm14.44-8.24V5.493H5.777v2.746h14.44z" />
+                                    </svg>
+                                    <figcaption>
+                                        <strong>Portal Transparência</strong>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col text-center navbarItem1" id="carta">
+                                <figure class="figure">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" fill="none"
+                                        viewBox="0 0 28 24">
+                                        <path fill="#000"
+                                            d="M.005 4.454L14 11.784l13.995-7.33c-.052-.934-.443-1.812-1.093-2.454-.65-.643-1.509-1-2.402-1h-21c-.893 0-1.753.357-2.402 1-.65.642-1.04 1.52-1.093 2.454z" />
+                                        <path fill="#000"
+                                            d="M28 8.55l-14 7.333L0 8.55v10.783c0 .973.369 1.905 1.025 2.593C1.682 22.614 2.572 23 3.5 23h21c.928 0 1.819-.386 2.475-1.074.656-.688 1.025-1.62 1.025-2.593V8.55z" />
+                                    </svg>
+                                    <figcaption>
+                                        <strong>Carta de Serviços ao Cidadão </strong>
+                                    </figcaption>
+                                </figure>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="container-fluid p-0">
-            <div class="slider">
-                <img src="assets/Vitrine.png" alt="">
-                <img src="assets/Vitrine.png" alt="">
-                <img src="assets/Vitrine.png" alt="">
+            <div class="container-fluid bgBlue-100">
+                <div class="container">
+                    <div class="row py-2 text-center align-items-center">
+                        <div class="col ">
+                            <div class="dropdown list">
+                                <a class="btn dropdown-toggle text-white" href="#" id="Prefeitura"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Prefeitura</a>
+                                <ul class="dropdown-menu text-center" aria-labelledby="Prefeitura">
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="dropdown list">
+                                <a class="btn dropdown-toggle  text-white" href="#" id="Município"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Município</a>
+                                <ul class="dropdown-menu text-center" aria-labelledby="Município">
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="dropdown list">
+                                <a class="btn dropdown-toggle  text-white" href="#" id="Secretarias"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Secretarias</a>
+                                <ul class="dropdown-menu text-center" aria-labelledby="Secretarias">
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col list">
+                            <div class="rounded-2">
+                                <a class="text-white" href="">Notícias</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="dropdown list">
+                                <a class="btn dropdown-toggle  text-white" href="#" id="Imprensa"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Imprensa</a>
+                                <ul class="dropdown-menu text-center" aria-labelledby="Imprensa">
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="dropdown list">
+                                <a class="btn dropdown-toggle  text-white" href="#" id="Contato"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Contato</a>
+                                <ul class="dropdown-menu text-center" aria-labelledby="Contato">
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="container p-1">
-            <div class=" container slider2">
-                <div class="col text-center navbarItem1">
-                    <figure>
-                        <img src="assets/ouv.svg" alt="Ouvidoria e-SIC">
-                        <figcaption>
-                            Ouvidoria e-SIC
-                        </figcaption>
-                    </figure>
+            <div class="container-fluid p-0">
+                <div class="slider">
+                    <img src="assets/Vitrine.png" alt="">
+                    <img src="assets/Vitrine.png" alt="">
+                    <img src="assets/Vitrine.png" alt="">
                 </div>
-                <div class="col text-center navbarItem1">
-                    <figure>
-                        <img src="assets/transp.svg" alt="Portal Transparência">
-                        <figcaption>
-                            Portal
-                            Transparência
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col text-center navbarItem1" id="carta">
-                    <figure class="figure">
-                        <img src="assets/carta.svg" alt="Carta de Serviços ao Cidadão">
-                        <figcaption>
-                            Carta de Serviços
-                            ao Cidadão
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col text-center navbarItem1">
-                    <figure>
-                        <img src="assets/ouv.svg" alt="Ouvidoria e-SIC">
-                        <figcaption>
-                            Ouvidoria e-SIC
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col text-center navbarItem1">
-                    <figure>
-                        <img src="assets/transp.svg" alt="Portal Transparência">
-                        <figcaption>
-                            Portal
-                            Transparência
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col text-center navbarItem1" id="carta">
-                    <figure class="figure">
-                        <img src="assets/carta.svg" alt="Carta de Serviços ao Cidadão">
-                        <figcaption>
-                            Carta de Serviços
-                            ao Cidadão
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col text-center navbarItem1">
-                    <figure>
-                        <img src="assets/ouv.svg" alt="Ouvidoria e-SIC">
-                        <figcaption>
-                            Ouvidoria e-SIC
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col text-center navbarItem1">
-                    <figure>
-                        <img src="assets/transp.svg" alt="Portal Transparência">
-                        <figcaption>
-                            Portal
-                            Transparência
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col text-center navbarItem1" id="carta">
-                    <figure class="figure">
-                        <img src="assets/carta.svg" alt="Carta de Serviços ao Cidadão">
-                        <figcaption>
-                            Carta de Serviços
-                            ao Cidadão
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col text-center navbarItem1">
-                    <figure>
-                        <img src="assets/ouv.svg" alt="Ouvidoria e-SIC">
-                        <figcaption>
-                            Ouvidoria e-SIC
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col text-center navbarItem1">
-                    <figure>
-                        <img src="assets/transp.svg" alt="Portal Transparência">
-                        <figcaption>
-                            Portal
-                            Transparência
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col text-center navbarItem1" id="carta">
-                    <figure class="figure">
-                        <img src="assets/carta.svg" alt="Carta de Serviços ao Cidadão">
-                        <figcaption>
-                            Carta de Serviços
-                            ao Cidadão
-                        </figcaption>
-                    </figure>
+            </div>
+
+            <div class="container p-1">
+                <div class=" container slider2">
+                    <div class="col text-center navbarItem1">
+                        <figure>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none"
+                                viewBox="0 0 28 28">
+                                <path fill="#000"
+                                    d="M25.667 2.333H2.333c-.619 0-1.212.273-1.65.76C.246 3.579 0 4.238 0 4.926v18.148c0 .688.246 1.347.683 1.833.438.486 1.031.76 1.65.76h23.334c.618 0 1.212-.274 1.65-.76.437-.486.683-1.145.683-1.833V4.926c0-.688-.246-1.347-.683-1.833-.438-.487-1.032-.76-1.65-.76zM9.333 6.223c.929 0 1.819.409 2.475 1.138.657.73 1.025 1.719 1.025 2.75s-.368 2.02-1.025 2.75c-.656.73-1.546 1.139-2.475 1.139-.928 0-1.818-.41-2.475-1.139-.656-.73-1.025-1.719-1.025-2.75s.37-2.02 1.025-2.75c.657-.729 1.547-1.139 2.475-1.139zm7 15.555h-14v-1.296c0-2.593 4.667-4.019 7-4.019 2.334 0 7 1.426 7 4.018v1.297zm4.492-5.185h1.925l1.75 2.592-2.333 2.593c-1.517-1.296-2.649-3.098-3.174-5.185-.21-.83-.326-1.699-.326-2.593 0-.894.116-1.763.326-2.593.525-2.1 1.657-3.888 3.174-5.185L24.5 8.815l-1.75 2.592h-1.925c-.257.817-.408 1.686-.408 2.593s.151 1.776.408 2.593z" />
+                            </svg>
+                            <figcaption>
+                                Ouvidoria e-SIC
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col text-center navbarItem1">
+                        <figure>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none"
+                                viewBox="0 0 28 28">
+                                <path fill="#000"
+                                    d="M18.05 12.359c3.61 0 6.499 2.746 6.499 6.18 0 1.208-.361 2.348-.997 3.295L28 26.091 25.993 28l-4.506-4.216c-.996.59-2.18.934-3.436.934-3.61 0-6.499-2.746-6.499-6.18 0-3.433 2.888-6.179 6.498-6.179zm0 2.746c-.957 0-1.875.362-2.552 1.006s-1.058 1.517-1.058 2.427c0 .911.38 1.784 1.058 2.428.677.644 1.595 1.006 2.553 1.006.957 0 1.875-.362 2.552-1.006s1.058-1.517 1.058-2.428c0-.91-.38-1.783-1.058-2.427-.677-.644-1.595-1.006-2.553-1.006zM5.777 16.48v2.746h2.888c.202 2.129 1.155 4.037 2.614 5.493h-8.39c-.766 0-1.5-.29-2.042-.804C.304 23.398 0 22.7 0 21.972V2.746C0 1.222 1.285 0 2.888 0h20.217c.766 0 1.5.29 2.042.804.542.515.846 1.214.846 1.942v11.027c-.846-1.275-2.018-2.326-3.407-3.054-1.39-.728-2.95-1.108-4.535-1.106-1.834 0-3.553.508-4.997 1.373H5.776v2.746h4.332c-.52.824-.953 1.758-1.198 2.747H5.776zm14.44-8.24V5.493H5.777v2.746h14.44z" />
+                            </svg>
+                            <figcaption>
+                                Portal
+                                Transparência
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col text-center navbarItem1">
+                        <figure class="figure">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" fill="none"
+                                viewBox="0 0 28 24">
+                                <path fill="#000"
+                                    d="M.005 4.454L14 11.784l13.995-7.33c-.052-.934-.443-1.812-1.093-2.454-.65-.643-1.509-1-2.402-1h-21c-.893 0-1.753.357-2.402 1-.65.642-1.04 1.52-1.093 2.454z" />
+                                <path fill="#000"
+                                    d="M28 8.55l-14 7.333L0 8.55v10.783c0 .973.369 1.905 1.025 2.593C1.682 22.614 2.572 23 3.5 23h21c.928 0 1.819-.386 2.475-1.074.656-.688 1.025-1.62 1.025-2.593V8.55z" />
+                            </svg>
+                            <figcaption>
+                                Carta de Serviços
+                                ao Cidadão
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col text-center navbarItem1">
+                        <figure>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none"
+                                viewBox="0 0 28 28">
+                                <path fill="#000"
+                                    d="M25.667 2.333H2.333c-.619 0-1.212.273-1.65.76C.246 3.579 0 4.238 0 4.926v18.148c0 .688.246 1.347.683 1.833.438.486 1.031.76 1.65.76h23.334c.618 0 1.212-.274 1.65-.76.437-.486.683-1.145.683-1.833V4.926c0-.688-.246-1.347-.683-1.833-.438-.487-1.032-.76-1.65-.76zM9.333 6.223c.929 0 1.819.409 2.475 1.138.657.73 1.025 1.719 1.025 2.75s-.368 2.02-1.025 2.75c-.656.73-1.546 1.139-2.475 1.139-.928 0-1.818-.41-2.475-1.139-.656-.73-1.025-1.719-1.025-2.75s.37-2.02 1.025-2.75c.657-.729 1.547-1.139 2.475-1.139zm7 15.555h-14v-1.296c0-2.593 4.667-4.019 7-4.019 2.334 0 7 1.426 7 4.018v1.297zm4.492-5.185h1.925l1.75 2.592-2.333 2.593c-1.517-1.296-2.649-3.098-3.174-5.185-.21-.83-.326-1.699-.326-2.593 0-.894.116-1.763.326-2.593.525-2.1 1.657-3.888 3.174-5.185L24.5 8.815l-1.75 2.592h-1.925c-.257.817-.408 1.686-.408 2.593s.151 1.776.408 2.593z" />
+                            </svg>
+                            <figcaption>
+                                Ouvidoria e-SIC
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col text-center navbarItem1">
+                        <figure>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none"
+                                viewBox="0 0 28 28">
+                                <path fill="#000"
+                                    d="M18.05 12.359c3.61 0 6.499 2.746 6.499 6.18 0 1.208-.361 2.348-.997 3.295L28 26.091 25.993 28l-4.506-4.216c-.996.59-2.18.934-3.436.934-3.61 0-6.499-2.746-6.499-6.18 0-3.433 2.888-6.179 6.498-6.179zm0 2.746c-.957 0-1.875.362-2.552 1.006s-1.058 1.517-1.058 2.427c0 .911.38 1.784 1.058 2.428.677.644 1.595 1.006 2.553 1.006.957 0 1.875-.362 2.552-1.006s1.058-1.517 1.058-2.428c0-.91-.38-1.783-1.058-2.427-.677-.644-1.595-1.006-2.553-1.006zM5.777 16.48v2.746h2.888c.202 2.129 1.155 4.037 2.614 5.493h-8.39c-.766 0-1.5-.29-2.042-.804C.304 23.398 0 22.7 0 21.972V2.746C0 1.222 1.285 0 2.888 0h20.217c.766 0 1.5.29 2.042.804.542.515.846 1.214.846 1.942v11.027c-.846-1.275-2.018-2.326-3.407-3.054-1.39-.728-2.95-1.108-4.535-1.106-1.834 0-3.553.508-4.997 1.373H5.776v2.746h4.332c-.52.824-.953 1.758-1.198 2.747H5.776zm14.44-8.24V5.493H5.777v2.746h14.44z" />
+                            </svg>
+                            <figcaption>
+                                Portal
+                                Transparência
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col text-center navbarItem1">
+                        <figure class="figure">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" fill="none"
+                                viewBox="0 0 28 24">
+                                <path fill="#000"
+                                    d="M.005 4.454L14 11.784l13.995-7.33c-.052-.934-.443-1.812-1.093-2.454-.65-.643-1.509-1-2.402-1h-21c-.893 0-1.753.357-2.402 1-.65.642-1.04 1.52-1.093 2.454z" />
+                                <path fill="#000"
+                                    d="M28 8.55l-14 7.333L0 8.55v10.783c0 .973.369 1.905 1.025 2.593C1.682 22.614 2.572 23 3.5 23h21c.928 0 1.819-.386 2.475-1.074.656-.688 1.025-1.62 1.025-2.593V8.55z" />
+                            </svg>
+                            <figcaption>
+                                Carta de Serviços
+                                ao Cidadão
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col text-center navbarItem1">
+                        <figure>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none"
+                                viewBox="0 0 28 28">
+                                <path fill="#000"
+                                    d="M25.667 2.333H2.333c-.619 0-1.212.273-1.65.76C.246 3.579 0 4.238 0 4.926v18.148c0 .688.246 1.347.683 1.833.438.486 1.031.76 1.65.76h23.334c.618 0 1.212-.274 1.65-.76.437-.486.683-1.145.683-1.833V4.926c0-.688-.246-1.347-.683-1.833-.438-.487-1.032-.76-1.65-.76zM9.333 6.223c.929 0 1.819.409 2.475 1.138.657.73 1.025 1.719 1.025 2.75s-.368 2.02-1.025 2.75c-.656.73-1.546 1.139-2.475 1.139-.928 0-1.818-.41-2.475-1.139-.656-.73-1.025-1.719-1.025-2.75s.37-2.02 1.025-2.75c.657-.729 1.547-1.139 2.475-1.139zm7 15.555h-14v-1.296c0-2.593 4.667-4.019 7-4.019 2.334 0 7 1.426 7 4.018v1.297zm4.492-5.185h1.925l1.75 2.592-2.333 2.593c-1.517-1.296-2.649-3.098-3.174-5.185-.21-.83-.326-1.699-.326-2.593 0-.894.116-1.763.326-2.593.525-2.1 1.657-3.888 3.174-5.185L24.5 8.815l-1.75 2.592h-1.925c-.257.817-.408 1.686-.408 2.593s.151 1.776.408 2.593z" />
+                            </svg>
+                            <figcaption>
+                                Ouvidoria e-SIC
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col text-center navbarItem1">
+                        <figure>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none"
+                                viewBox="0 0 28 28">
+                                <path fill="#000"
+                                    d="M18.05 12.359c3.61 0 6.499 2.746 6.499 6.18 0 1.208-.361 2.348-.997 3.295L28 26.091 25.993 28l-4.506-4.216c-.996.59-2.18.934-3.436.934-3.61 0-6.499-2.746-6.499-6.18 0-3.433 2.888-6.179 6.498-6.179zm0 2.746c-.957 0-1.875.362-2.552 1.006s-1.058 1.517-1.058 2.427c0 .911.38 1.784 1.058 2.428.677.644 1.595 1.006 2.553 1.006.957 0 1.875-.362 2.552-1.006s1.058-1.517 1.058-2.428c0-.91-.38-1.783-1.058-2.427-.677-.644-1.595-1.006-2.553-1.006zM5.777 16.48v2.746h2.888c.202 2.129 1.155 4.037 2.614 5.493h-8.39c-.766 0-1.5-.29-2.042-.804C.304 23.398 0 22.7 0 21.972V2.746C0 1.222 1.285 0 2.888 0h20.217c.766 0 1.5.29 2.042.804.542.515.846 1.214.846 1.942v11.027c-.846-1.275-2.018-2.326-3.407-3.054-1.39-.728-2.95-1.108-4.535-1.106-1.834 0-3.553.508-4.997 1.373H5.776v2.746h4.332c-.52.824-.953 1.758-1.198 2.747H5.776zm14.44-8.24V5.493H5.777v2.746h14.44z" />
+                            </svg>
+                            <figcaption>
+                                Portal
+                                Transparência
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col text-center navbarItem1">
+                        <figure class="figure">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" fill="none"
+                                viewBox="0 0 28 24">
+                                <path fill="#000"
+                                    d="M.005 4.454L14 11.784l13.995-7.33c-.052-.934-.443-1.812-1.093-2.454-.65-.643-1.509-1-2.402-1h-21c-.893 0-1.753.357-2.402 1-.65.642-1.04 1.52-1.093 2.454z" />
+                                <path fill="#000"
+                                    d="M28 8.55l-14 7.333L0 8.55v10.783c0 .973.369 1.905 1.025 2.593C1.682 22.614 2.572 23 3.5 23h21c.928 0 1.819-.386 2.475-1.074.656-.688 1.025-1.62 1.025-2.593V8.55z" />
+                            </svg>
+                            <figcaption>
+                                Carta de Serviços
+                                ao Cidadão
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col text-center navbarItem1">
+                        <figure>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none"
+                                viewBox="0 0 28 28">
+                                <path fill="#000"
+                                    d="M25.667 2.333H2.333c-.619 0-1.212.273-1.65.76C.246 3.579 0 4.238 0 4.926v18.148c0 .688.246 1.347.683 1.833.438.486 1.031.76 1.65.76h23.334c.618 0 1.212-.274 1.65-.76.437-.486.683-1.145.683-1.833V4.926c0-.688-.246-1.347-.683-1.833-.438-.487-1.032-.76-1.65-.76zM9.333 6.223c.929 0 1.819.409 2.475 1.138.657.73 1.025 1.719 1.025 2.75s-.368 2.02-1.025 2.75c-.656.73-1.546 1.139-2.475 1.139-.928 0-1.818-.41-2.475-1.139-.656-.73-1.025-1.719-1.025-2.75s.37-2.02 1.025-2.75c.657-.729 1.547-1.139 2.475-1.139zm7 15.555h-14v-1.296c0-2.593 4.667-4.019 7-4.019 2.334 0 7 1.426 7 4.018v1.297zm4.492-5.185h1.925l1.75 2.592-2.333 2.593c-1.517-1.296-2.649-3.098-3.174-5.185-.21-.83-.326-1.699-.326-2.593 0-.894.116-1.763.326-2.593.525-2.1 1.657-3.888 3.174-5.185L24.5 8.815l-1.75 2.592h-1.925c-.257.817-.408 1.686-.408 2.593s.151 1.776.408 2.593z" />
+                            </svg>
+                            <figcaption>
+                                Ouvidoria e-SIC
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col text-center navbarItem1">
+                        <figure>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none"
+                                viewBox="0 0 28 28">
+                                <path fill="#000"
+                                    d="M18.05 12.359c3.61 0 6.499 2.746 6.499 6.18 0 1.208-.361 2.348-.997 3.295L28 26.091 25.993 28l-4.506-4.216c-.996.59-2.18.934-3.436.934-3.61 0-6.499-2.746-6.499-6.18 0-3.433 2.888-6.179 6.498-6.179zm0 2.746c-.957 0-1.875.362-2.552 1.006s-1.058 1.517-1.058 2.427c0 .911.38 1.784 1.058 2.428.677.644 1.595 1.006 2.553 1.006.957 0 1.875-.362 2.552-1.006s1.058-1.517 1.058-2.428c0-.91-.38-1.783-1.058-2.427-.677-.644-1.595-1.006-2.553-1.006zM5.777 16.48v2.746h2.888c.202 2.129 1.155 4.037 2.614 5.493h-8.39c-.766 0-1.5-.29-2.042-.804C.304 23.398 0 22.7 0 21.972V2.746C0 1.222 1.285 0 2.888 0h20.217c.766 0 1.5.29 2.042.804.542.515.846 1.214.846 1.942v11.027c-.846-1.275-2.018-2.326-3.407-3.054-1.39-.728-2.95-1.108-4.535-1.106-1.834 0-3.553.508-4.997 1.373H5.776v2.746h4.332c-.52.824-.953 1.758-1.198 2.747H5.776zm14.44-8.24V5.493H5.777v2.746h14.44z" />
+                            </svg>
+                            <figcaption>
+                                Portal
+                                Transparência
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col text-center navbarItem1">
+                        <figure class="figure">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" fill="none"
+                                viewBox="0 0 28 24">
+                                <path fill="#000"
+                                    d="M.005 4.454L14 11.784l13.995-7.33c-.052-.934-.443-1.812-1.093-2.454-.65-.643-1.509-1-2.402-1h-21c-.893 0-1.753.357-2.402 1-.65.642-1.04 1.52-1.093 2.454z" />
+                                <path fill="#000"
+                                    d="M28 8.55l-14 7.333L0 8.55v10.783c0 .973.369 1.905 1.025 2.593C1.682 22.614 2.572 23 3.5 23h21c.928 0 1.819-.386 2.475-1.074.656-.688 1.025-1.62 1.025-2.593V8.55z" />
+                            </svg>
+                            <figcaption>
+                                Carta de Serviços
+                                ao Cidadão
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <span class="h3 p-2 colorBlue">
-                Notícias
-            </span>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row py-2">
+                <h3 class="p-2 colorBlue">
+                    Notícias
+                </h3>
+            </div>
+            <div class="container pb-5">
+                <div class="row gap-4 zoom">
+                    <div class="col  borderImg p-0 position-relative ">
+                        <img class="w-100" src="assets/foto-center.svg" alt="montanha nevada">
+                        <p class="position-absolute p-1 px-3 date">13/04/2020</p>
+                        <p class="h5 p-2 mx-4 float-start">
+                            Ted Sarandos nomeado co-CEO da Netflix
+                        </p>
+                    </div>
+                    <div class="col  borderImg p-0 position-relative">
+                        <img class="w-100" src="assets/foto-center2.svg" alt="casas residenciais vista por cima">
+                        <p class="position-absolute p-1 px-3 date">14/04/2020</p>
+                        <p class="h5 p-2 mx-4 float-start">
+                            O aplicativo de meditação Calm está tendo seu próprio programa HBO Max cheio de celebridades
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container pb-5">
+                <div class="borderImg p-2">
+                    <div class="slider3 m-0">
+                        <div class="border-end slider-div px-2">
+                            <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">15/04/2020</span>
+                            <img class="w-100" src="assets/space.svg" alt="">
+                            <figcaption>
+                                Spaceflight Inc. lança novo veículo de transferência orbital para foguete via satélite
+                            </figcaption>
+                        </div>
+                        <div class="border-end  slider-div px-2">
+                            <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">16/04/2020</span>
+                            <img class="w-100" src="assets/17-filmes.svg" alt="">
+                            <figcaption>
+                                17 filmes icônicos com classificações surpreendentemente baixas
+                            </figcaption>
+                        </div>
+                        <div class="border-end slider-div px-2">
+                            <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">16/04/2020</span>
+                            <img class="w-100" src="assets/netflix.svg" alt="">
+                            <figcaption>
+                                Por que as ações da Netflix caíram 10%
+                            </figcaption>
+                        </div>
+                        <div class="border-end slider-div px-2">
+                            <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">17/04/2020</span>
+                            <img class="w-100" src="assets/apple.svg" alt="">
+                            <figcaption>
+                                Apple abre outra megaloja na China em meio às críticas de William Barr
+                            </figcaption>
+                        </div>
+                        <div class="border-end slider-div px-2">
+                            <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">15/04/2020</span>
+                            <img class="w-100" src="assets/space.svg" alt="">
+                            <figcaption>
+                                Spaceflight Inc. lança novo veículo de transferência orbital para foguete via satélite
+                            </figcaption>
+                        </div>
+                        <div class="border-end slider-div px-2">
+                            <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">16/04/2020</span>
+                            <img class="w-100" src="assets/17-filmes.svg" alt="">
+                            <figcaption>
+                                17 filmes icônicos com classificações surpreendentemente baixas
+                            </figcaption>
+                        </div>
+                        <div class="border-end slider-div px-2">
+                            <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">16/04/2020</span>
+                            <img class="w-100" src="assets/netflix.svg" alt="">
+                            <figcaption>
+                                Por que as ações da Netflix caíram 10%
+                            </figcaption>
+                        </div>
+                        <div class="border-end slider-div px-2">
+                            <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">17/04/2020</span>
+                            <img class="w-100" src="assets/apple.svg" alt="">
+                            <figcaption>
+                                Apple abre outra megaloja na China em meio às críticas de William Barr
+                            </figcaption>
+                        </div>
+                        <div class="border-end slider-div px-2">
+                            <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">15/04/2020</span>
+                            <img class="w-100" src="assets/space.svg" alt="">
+                            <figcaption>
+                                Spaceflight Inc. lança novo veículo de transferência orbital para foguete via satélite
+                            </figcaption>
+                        </div>
+                        <div class="border-end slider-div px-2">
+                            <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">16/04/2020</span>
+                            <img class="w-100" src="assets/17-filmes.svg" alt="">
+                            <figcaption>
+                                17 filmes icônicos com classificações surpreendentemente baixas
+                            </figcaption>
+                        </div>
+                        <div class="border-end  slider-div px-2">
+                            <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">16/04/2020</span>
+                            <img class="w-100" src="assets/netflix.svg" alt="">
+                            <figcaption>
+                                Por que as ações da Netflix caíram 10%
+                            </figcaption>
+                        </div>
+                        <div class="border-end slider-div px-2">
+                            <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">17/04/2020</span>
+                            <img class="w-100" src="assets/apple.svg" alt="">
+                            <figcaption>
+                                Apple abre outra megaloja na China em meio às críticas de William Barr
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center pb-5">
+            <button class="btn btn-warning rounded-4 border-0 p-2 px-4 fs-6 fw-semibold">
+                <span>
+                    Veja mais notícias
+                </span>
+            </button>
+
         </div>
         <div class="container pb-5">
-            <div class="row gap-4">
-                <div class="col  borderImg p-0 position-relative">
-                    <img class="w-100" src="assets/foto-center.svg" alt="">
-                    <span class="position-absolute p-1 px-3 date">13/04/2020</span>
-                    <span class="h5 p-2 mx-4 float-start">
-                        Ted Sarandos nomeado co-CEO da Netflix
-                    </span>
+            <div class="row ">
+                <div class="col text-center">
+                    <img class="w-100" src="assets/banner 01.svg" alt="">
                 </div>
-                <div class="col  borderImg p-0 position-relative">
-                    <img class="w-100" src="assets/foto-center2.svg" alt="">
-                    <span class="position-absolute p-1 px-3 date">14/04/2020</span>
-                    <span class="h5 p-2 mx-4 float-start">
-                        O aplicativo de meditação Calm está tendo seu próprio programa HBO Max cheio de celebridades
-                    </span>
+                <div class="col text-center">
+                    <img class="w-100" src="assets/banner 01.svg" alt="">
                 </div>
             </div>
         </div>
-        <div class="container pb-5">
-            <div class="borderImg p-2">
-                <div class="slider3 m-0">
-                    <div class="border-end  px-2">
-                        <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">15/04/2020</span>
-                        <img class="w-100" src="assets/space.svg" alt="">
-                        <figcaption>
-                            Spaceflight Inc. lança novo veículo de transferência orbital para foguete via satélite
+        <div class="container-fluid rounded-4 p-0 bgBlue-200">
+            <div class="container p-3 ">
+                <span class="h4 text-white">
+                    Galeria de Fotos
+                </span>
+            </div>
+            <div class="container-fluid">
+                <div class="slider4">
+                    <div class="px-2 zoom-foto">
+                        <span id="date" class="position-absolute p-1 px-3 m-3 date-slider z-1">13/04/2020</span>
+                        <figcaption class="position-absolute p-3 text-white bottom-0 z-1">
+                            Como escolher o cliente certo para o seu negócio fotográfico?
                         </figcaption>
+                        <img class="w-100" src="assets/fotografico.svg" alt="">
                     </div>
-                    <div class="border-end px-2">
-                        <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">16/04/2020</span>
-                        <img class="w-100" src="assets/17-filmes.svg" alt="">
-                        <figcaption>
-                            17 filmes icônicos com classificações surpreendentemente baixas
+                    <div class="px-2 zoom-foto">
+                        <span id="date" class="position-absolute p-1 px-3 m-3 date-slider z-1">13/04/2020</span>
+                        <figcaption class="position-absolute p-3 text-white bottom-0 z-1">
+                            Como construir uma comunidade leal online e offline
                         </figcaption>
+                        <img class="w-100" src="assets/on-off.svg" alt="">
                     </div>
-                    <div class="border-end px-2">
-                        <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">16/04/2020</span>
-                        <img class="w-100" src="assets/netflix.svg" alt="">
-                        <figcaption>
-                            Por que as ações da Netflix caíram 10%
+                    <div class="px-2 zoom-foto">
+                        <span id="date" class="position-absolute p-1 px-3 m-3 date-slider z-1">13/04/2020</span>
+                        <figcaption class="position-absolute p-3 text-white bottom-0 z-1">
+                            Iniciando seu blog de viagem com o Vasco
                         </figcaption>
+                        <img class="w-100" src="assets/vasco.svg" alt="">
                     </div>
-                    <div class="border-end px-2">
-                        <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">17/04/2020</span>
-                        <img class="w-100" src="assets/apple.svg" alt="">
-                        <figcaption>
-                            Apple abre outra megaloja na China em meio às críticas de William Barr
+                    <div class="px-2 zoom-foto">
+                        <span id="date" class="position-absolute p-1 px-3 m-3 date-slider z-1">13/04/2020</span>
+                        <figcaption class="position-absolute p-3 text-white bottom-0 z-1">
+                            Como escolher o cliente certo para o seu negócio fotográfico?
                         </figcaption>
+                        <img class="w-100" src="assets/fotografico.svg" alt="">
                     </div>
-                    <div class="border-end px-2">
-                        <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">15/04/2020</span>
-                        <img class="w-100" src="assets/space.svg" alt="">
-                        <figcaption>
-                            Spaceflight Inc. lança novo veículo de transferência orbital para foguete via satélite
+                    <div class="px-2 zoom-foto">
+                        <span id="date" class="position-absolute p-1 px-3 m-3 date-slider z-1">13/04/2020</span>
+                        <figcaption class="position-absolute p-3 text-white bottom-0 z-1">
+                            Como construir uma comunidade leal online e offline
                         </figcaption>
+                        <img class="w-100" src="assets/on-off.svg" alt="">
                     </div>
-                    <div class="border-end px-2">
-                        <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">16/04/2020</span>
-                        <img class="w-100" src="assets/17-filmes.svg" alt="">
-                        <figcaption>
-                            17 filmes icônicos com classificações surpreendentemente baixas
+                    <div class="px-2 zoom-foto">
+                        <span id="date" class="position-absolute p-1 px-3 m-3 date-slider z-1">13/04/2020</span>
+                        <figcaption class="position-absolute p-3 text-white bottom-0 z-1">
+                            Iniciando seu blog de viagem com o Vasco
                         </figcaption>
+                        <img class="w-100" src="assets/vasco.svg" alt="">
                     </div>
-                    <div class="border-end px-2">
-                        <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">16/04/2020</span>
-                        <img class="w-100" src="assets/netflix.svg" alt="">
-                        <figcaption>
-                            Por que as ações da Netflix caíram 10%
+                    <div class="px-2 zoom-foto">
+                        <span id="date" class="position-absolute p-1 px-3 m-3 date-slider z-1">13/04/2020</span>
+                        <figcaption class="position-absolute p-3 text-white bottom-0 z-1">
+                            Como escolher o cliente certo para o seu negócio fotográfico?
                         </figcaption>
+                        <img class="w-100" src="assets/fotografico.svg" alt="">
                     </div>
-                    <div class="border-end px-2">
-                        <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">17/04/2020</span>
-                        <img class="w-100" src="assets/apple.svg" alt="">
-                        <figcaption>
-                            Apple abre outra megaloja na China em meio às críticas de William Barr
+                    <div class="px-2 zoom-foto">
+                        <span id="date" class="position-absolute p-1 px-3 m-3 date-slider z-1">13/04/2020</span>
+                        <figcaption class="position-absolute p-3 text-white bottom-0 z-1">
+                            Como construir uma comunidade leal online e offline
                         </figcaption>
+                        <img class="w-100" src="assets/on-off.svg" alt="">
+                    </div>
+                    <div class="px-2 zoom-foto">
+                        <span id="date" class="position-absolute p-1 px-3 m-3 date-slider z-1">13/04/2020</span>
+                        <figcaption class="position-absolute p-3 text-white bottom-0 z-1">
+                            Iniciando seu blog de viagem com o Vasco
+                        </figcaption>
+                        <img class="w-100" src="assets/vasco.svg" alt="">
+                    </div>
+                    <div class="px-2 zoom-foto">
+                        <span id="date" class="position-absolute p-1 px-3 m-3 date-slider z-1">13/04/2020</span>
+                        <figcaption class="position-absolute p-3 text-white bottom-0 z-1">
+                            Como escolher o cliente certo para o seu negócio fotográfico?
+                        </figcaption>
+                        <img class="w-100" src="assets/fotografico.svg" alt="">
+                    </div>
+                    <div class="px-2 zoom-foto">
+                        <span id="date" class="position-absolute p-1 px-3 m-3 date-slider z-1">13/04/2020</span>
+                        <figcaption class="position-absolute p-3 text-white bottom-0 z-1">
+                            Como construir uma comunidade leal online e offline
+                        </figcaption>
+                        <img class="w-100" src="assets/on-off.svg" alt="">
+                    </div>
+                    <div class="px-2 zoom-foto">
+                        <span id="date" class="position-absolute p-1 px-3 m-3 date-slider z-1">13/04/2020</span>
+                        <figcaption class="position-absolute p-3 text-white bottom-0 z-1">
+                            Iniciando seu blog de viagem com o Vasco
+                        </figcaption>
+                        <img class="w-100" src="assets/vasco.svg" alt="">
                     </div>
                 </div>
             </div>
+            <div class="container text-center pb-4">
+                <button class="btn btn-warning rounded-4 border-0 p-2 px-4 fs-6 fw-semibold">
+                    <p class="mb-0">
+                        Veja mais galerias
+                    </p>
+                </button>
+            </div>
         </div>
-    </div>
-    <div class="container text-center pb-5">
-        <button class="btn btn-warning rounded-4 border-0 p-2 px-4 fs-6 fw-semibold">
-            <span>
-                Veja mais notícias
+        <div class="container py-4">
+            <span class="colorBlue h4"><strong>
+                    Calendário de Eventos
+                </strong>
             </span>
-        </button>
-
-    </div>
-    <div class="container pb-5">
-        <div class="row ">
-            <div class="col text-center">
-                <img class="w-100" src="assets/banner 01.svg" alt="">
-            </div>
-            <div class="col text-center">
-                <img class="w-100" src="assets/banner 01.svg" alt="">
-            </div>
         </div>
-    </div>
-    <div class="container-fluid rounded-4 p-0 bgBlue-200">
-        <div class="container p-3 ">
-            <span class="h4 text-white">
-                Galeria de Fotos
-            </span>
-        </div>
-        <div class="container-fluid">
-            <div class="slider4">
-                <div class="px-2">
-                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">13/04/2020</span>
-                    <figcaption class="position-absolute p-3 text-white bottom-0">
-                        Apple abre outra megaloja na China em meio às críticas de William Barr
+        <div class="container-fluid borderImg p-2">
+            <div class="row p-4">
+                <div class="col border-end px-2 zoom-evento">
+                    <div class="colorBlue">
+                        <p class="mb-0 h5"><span class="h4">13 </span>de dezembro 2020</p>
+                    </div>
+                    <div class="pb-2">
+                        <time title="13 de dezembro ás 16:30" datetime="2020-12-13 16:30:00" class="colorBlue">
+                            A partir das 16:30
+                        </time>
+                    </div>
+                    <img class="w-100" src="assets/barcos.png" alt="">
+                    <figcaption class="grey h5 py-2">
+                        Como escrever conteúdo sobre suas fotos
                     </figcaption>
-                    <img class="w-100" src="assets/fotografico.svg" alt="">
+                    <div class="small grey">
+                        <p>Rua das azaleias, 257 - Jardim Botânico - Sinop/MT</p>
+                    </div>
                 </div>
-                <div class="px-2">
-                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">13/04/2020</span>
-                    <figcaption class="position-absolute p-3 text-white bottom-0">
-                        Apple abre outra megaloja na China em meio às críticas de William Barr
+                <div class="col border-end px-2 zoom-evento">
+                    <div class="colorBlue">
+                        <p class="mb-0 h5"><span class="h4">13 </span>de dezembro 2020</p>
+                    </div>
+                    <div class="pb-2">
+                        <time title="13 de dezembro ás 16:30" datetime="2020-12-13 16:30:00" class="colorBlue">
+                            A partir das 16:30
+                        </time>
+                    </div>
+                    <img class="w-100" src="assets/montanha.png" alt="">
+                    <figcaption class="grey h5 py-2">
+                        Onde expandir seu negócio como fotógrafo: site ou mídia social?
                     </figcaption>
-                    <img class="w-100" src="assets/on-off.svg" alt="">
+                    <div class="small grey">
+                        <p>Rua das azaleias, 257 - Jardim Botânico - Sinop/MT</p>
+                    </div>
                 </div>
-                <div class="px-2">
-                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">13/04/2020</span>
-                    <figcaption class="position-absolute p-3 text-white bottom-0">
-                        Apple abre outra megaloja na China em meio às críticas de William Barr
+                <div class="col border-end px-2 zoom-evento">
+                    <div class="colorBlue">
+                        <p class="mb-0 h5"><span class="h4">13 </span>de dezembro 2020</p>
+                    </div>
+                    <div class="pb-2">
+                        <time title="13 de dezembro ás 16:30" datetime="2020-12-13 16:30:00" class="colorBlue">
+                            A partir das 16:30
+                        </time>
+                    </div>
+                    <img class="w-100" src="assets/rio.png" alt="">
+                    <figcaption class="grey h5 py-2">
+                        Como um artista visual redefine o sucesso em design gráfico
                     </figcaption>
-                    <img class="w-100" src="assets/vasco.svg" alt="">
+                    <div class="small grey">
+                        <p>Rua das azaleias, 257 - Jardim Botânico - Sinop/MT</p>
+                    </div>
                 </div>
-                <div class="px-2">
-                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">17/04/2020</span>
-                    <figcaption class="position-absolute p-3 text-white bottom-0">
-                        Apple abre outra megaloja na China em meio às críticas de William Barr
+                <div class="col border-end px-2 zoom-evento">
+                    <div class="colorBlue">
+                        <p class="mb-0 h5"><span class="h4">13 </span>de dezembro 2020</p>
+                    </div>
+                    <div class="pb-2">
+                        <time title="13 de dezembro ás 16:30" datetime="2020-12-13 16:30:00" class="colorBlue">
+                            A partir das 16:30
+                        </time>
+                    </div>
+                    <img class="w-100" src="assets/floresta.png" alt="">
+                    <figcaption class="grey h5 py-2">
+                        Comece um blog para atingir seu pico criativo
                     </figcaption>
-                    <img class="w-100" src="assets/fotografico.svg" alt="">
-                </div>
-                <div class="px-2">
-                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">17/04/2020</span>
-                    <figcaption class="position-absolute p-3 text-white bottom-0">
-                        Apple abre outra megaloja na China em meio às críticas de William Barr
-                    </figcaption>
-                    <img class="w-100" src="assets/on-off.svg" alt="">
-                </div>
-                <div class="px-2">
-                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">17/04/2020</span>
-                    <figcaption class="position-absolute p-3 text-white bottom-0">
-                        Apple abre outra megaloja na China em meio às críticas de William Barr
-                    </figcaption>
-                    <img class="w-100" src="assets/vasco.svg" alt="">
-                </div>
-                <div class="px-2">
-                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">17/04/2020</span>
-                    <figcaption class="position-absolute p-3 text-white bottom-0">
-                        Apple abre outra megaloja na China em meio às críticas de William Barr
-                    </figcaption>
-                    <img class="w-100" src="assets/fotografico.svg" alt="">
-                </div>
-                <div class="px-2">
-                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">17/04/2020</span>
-                    <figcaption class="position-absolute p-3 text-white bottom-0">
-                        Apple abre outra megaloja na China em meio às críticas de William Barr
-                    </figcaption>
-                    <img class="w-100" src="assets/on-off.svg" alt="">
-                </div>
-                <div class="px-2">
-                    <span id="date" class="position-absolute p-1 px-3 m-3 date-slider">17/04/2020</span>
-                    <figcaption class="position-absolute p-3 text-white bottom-0">
-                        Apple abre outra megaloja na China em meio às críticas de William Barr
-                    </figcaption>
-                    <img class="w-100" src="assets/vasco.svg" alt="">
+                    <div class="small grey">
+                        <p>Rua das azaleias, 257 - Jardim Botânico - Sinop/MT</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container text-center pb-4">
+        <div class="container text-center py-4">
             <button class="btn btn-warning rounded-4 border-0 p-2 px-4 fs-6 fw-semibold">
                 <p class="mb-0">
-                    Veja mais galerias
+                    Veja mais eventos
                 </p>
             </button>
         </div>
-    </div>
-    <div class="container py-4">
-        <span class="colorBlue h4"><strong>
-                Calendário de Eventos
-            </strong>
-        </span>
-    </div>
-    <div class="container-fluid borderImg p-2">
-        <div class="row p-4">
-            <div class="col border-end px-2">
-                <div class="colorBlue">
-                    <p class="mb-0 h5"><span class="h4">13 </span>de dezembro 2020</p>
-                </div>
-                <div class="pb-2">
-                    <time title="13 de dezembro ás 16:30" datetime="2020-12-13 16:30:00" class="colorBlue">
-                        A partir das 16:30
-                    </time>
-                </div>
-                <img class="w-100" src="assets/barcos.png" alt="">
-                <figcaption class="grey h5 py-2">
-                    Como escrever conteúdo sobre suas fotos
-                </figcaption>
-                <div class="small grey">
-                    <p>Rua das azaleias, 257 - Jardim Botânico - Sinop/MT</p>
-                </div>
-            </div>
-            <div class="col border-end px-2">
-                <div class="colorBlue">
-                    <p class="mb-0 h5"><span class="h4">13 </span>de dezembro 2020</p>
-                </div>
-                <div class="pb-2">
-                    <time title="13 de dezembro ás 16:30" datetime="2020-12-13 16:30:00" class="colorBlue">
-                        A partir das 16:30
-                    </time>
-                </div>
-                <img class="w-100" src="assets/montanha.png" alt="">
-                <figcaption class="grey h5 py-2">
-                    Onde expandir seu negócio como fotógrafo: site ou mídia social?
-                </figcaption>
-                <div class="small grey">
-                    <p>Rua das azaleias, 257 - Jardim Botânico - Sinop/MT</p>
-                </div>
-            </div>
-            <div class="col border-end px-2">
-                <div class="colorBlue">
-                    <p class="mb-0 h5"><span class="h4">13 </span>de dezembro 2020</p>
-                </div>
-                <div class="pb-2">
-                    <time title="13 de dezembro ás 16:30" datetime="2020-12-13 16:30:00" class="colorBlue">
-                        A partir das 16:30
-                    </time>
-                </div>
-                <img class="w-100" src="assets/rio.png" alt="">
-                <figcaption class="grey h5 py-2">
-                    Como um artista visual redefine o sucesso em design gráfico
-                </figcaption>
-                <div class="small grey">
-                    <p>Rua das azaleias, 257 - Jardim Botânico - Sinop/MT</p>
-                </div>
-            </div>
-            <div class="col border-end px-2">
-                <div class="colorBlue">
-                    <p class="mb-0 h5"><span class="h4">13 </span>de dezembro 2020</p>
-                </div>
-                <div class="pb-2">
-                    <time title="13 de dezembro ás 16:30" datetime="2020-12-13 16:30:00" class="colorBlue">
-                        A partir das 16:30
-                    </time>
-                </div>
-                <img class="w-100" src="assets/floresta.png" alt="">
-                <figcaption class="grey h5 py-2">
-                    Comece um blog para atingir seu pico criativo
-                </figcaption>
-                <div class="small grey">
-                    <p>Rua das azaleias, 257 - Jardim Botânico - Sinop/MT</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container text-center py-4">
-        <button class="btn btn-warning rounded-4 border-0 p-2 px-4 fs-6 fw-semibold">
-            <p class="mb-0">
-                Veja mais eventos
-            </p>
-        </button>
-    </div>
-    <div class="container pb-4">
-        <div class="row">
-            <div class="col">
-                <span class="colorBlue h4"><strong>
-                        Galeria de Vídeos
-                    </strong>
-                </span>
-            </div>
-            <div class="col">
-                <span class="colorBlue h4"><strong>
-                        Galeria de Obras
-                    </strong>
-                </span>
-            </div>
-        </div>
-    </div>
-    <div class="container pb-5">
-        <div class="row gap-4">
-            <div class="col  borderImg p-0">
-                <div class="snippet-ytb-lazy " id="videoYtbLazy" data-id="F5tSoaJ93ac">
-                    <div class="player">
-                        <img class="w-100 position-absolute video" src="assets/biblioteca.png" alt="">
-                        <img class="z-1 img-video" src="assets/icon_video.png" alt="">
-                    </div>
-                </div>
-                <span class="h4 p-2 mx-4 float-start">
-                    Como a escrita influencia sua marca pessoal?
-                </span>
-            </div>
-            <div class="col  borderImg p-0 position-relative">
-                <img class="w-100" src="assets/foto-center2.svg" alt="">
-                <span class="position-absolute p-1 px-3 date">14/04/2020</span>
-                <span class="h4 p-2 mx-4 float-start">
-                    Por que não usaos sites prontos
-                </span>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="text-center py-4">
-                            <button class="btn btn-warning rounded-4 border-0 p-2 px-4 fs-6 fw-semibold">
-                                <p class="mb-0">
-                                    Veja mais vídeos
-                                </p>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="text-center py-4">
-                            <button class="btn btn-warning rounded-4 border-0 p-2 px-4 fs-6 fw-semibold">
-                                <p class="mb-0">
-                                    Veja mais obras
-                                </p>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid position-relative p-0 pb-5">
-        <div class="container-fluid rounded-4" id="cidade"></div>
-        <!-- <img class="w-100" src="assets/cidade.png" alt=""> -->
-        <div class="container-fluid position-absolute top-0">
-            <div class="row">
-                <div class="col-6  bg-white offset-5 rounded-bottom-4 px-0 py-4 d-flex justify-content-center">
-                    <div>
-                        <h1>Conheça a</h1>
-                        <h1><strong>Melhor Cidade do Brasil</strong></h1>
-                        <p>
-                            É a sua cidade! Onde tem tudo o que você precisa.
-                        </p>
-                        <div class="row justify-content-start">
-                            <div class="col">
-                                <div class="text-center py-4">
-                                    <button class="btn btn-warning rounded-4 border-0 p-2 px-4 fs-6 fw-semibold">
-                                        <p class="mb-0">
-                                            Conheça a Cidade
-                                        </p>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="text-center py-4">
-                                    <button class="btn btn-info rounded-4 border-0 p-2 px-4 fs-6 fw-semibold" disabled>
-                                        <p class="mb-0">
-                                            Conheça a economia
-                                        </p>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col"></div>
-            </div>
-
-        </div>
-    </div>
-    <div class="container-fluid bgBlue-100 p-0 py-4 rounded-4 text-white">
         <div class="container pb-4">
             <div class="row">
                 <div class="col">
-                    <h5>Horário de Atendimento</h5>
-                    <p>Segunda à Sexta, 07h às 11h e das 13h às 17h</p>
+                    <span class="colorBlue h4"><strong>
+                            Galeria de Vídeos
+                        </strong>
+                    </span>
                 </div>
                 <div class="col">
-                    <h5>Endereço</h5>
-                    <p>Rua das azaleias, 257 - Jardim Botânico - Sinop/MT</p>
-                </div>
-                <div class="col">
-                    <h5>Fale com a Prefeitura</h5>
-                    <p class="m-0">(66) 3535-3535</p>
-                    <p>(66) 9 9999-9999</p>
+                    <span class="colorBlue h4"><strong>
+                            Galeria de Obras
+                        </strong>
+                    </span>
                 </div>
             </div>
         </div>
-        <div class="container-fluid bgBlue-200">
-            <div class="container">
+        <div class="container pb-5">
+            <div class="row gap-4">
+                <div class="col  borderImg p-0 colorb">
+                    <div class="ytb" id="videoYtb" data-id="F5tSoaJ93ac">
+                        <div class="player">
+                            <img class="w-100 position-absolute video" src="assets/biblioteca.png" alt="">
+                            <img class="z-1 img-video" src="assets/icon_video.png" alt="">
+                        </div>
+                    </div>
+                    <figcaption class="h4 p-2 mx-4 float-start">
+                        Como a escrita influencia sua marca pessoal?
+                    </figcaption>
+                </div>
+                <div class="col  borderImg p-0 position-relative colorb">
+                    <img class="w-100" src="assets/foto-center2.svg" alt="">
+                    <span class="position-absolute p-1 px-3 date">14/04/2020</span>
+                    <figcaption class="h4 p-2 mx-4 float-start">
+                        Por que não usaos sites prontos
+                    </figcaption>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="text-center py-4">
+                                <button class="btn btn-warning rounded-4 border-0 p-2 px-4 fs-6 fw-semibold">
+                                    <p class="mb-0">
+                                        Veja mais vídeos
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="text-center py-4">
+                                <button class="btn btn-warning rounded-4 border-0 p-2 px-4 fs-6 fw-semibold">
+                                    <p class="mb-0">
+                                        Veja mais obras
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid position-relative p-0 pb-5">
+            <div class="container-fluid rounded-4" id="cidade"></div>
+            <!-- <img class="w-100" src="assets/cidade.png" alt=""> -->
+            <div class="container-fluid position-absolute top-0">
+                <div class="row">
+                    <div class="col-6  bg-white offset-5 rounded-bottom-4 px-0 py-4 d-flex justify-content-center">
+                        <div>
+                            <h1>Conheça a</h1>
+                            <h1><strong>Melhor Cidade do Brasil</strong></h1>
+                            <p>
+                                É a sua cidade! Onde tem tudo o que você precisa.
+                            </p>
+                            <div class="row justify-content-start">
+                                <div class="col">
+                                    <div class="text-center py-4">
+                                        <button class="btn btn-warning rounded-4 border-0 p-2 px-4 fs-6 fw-semibold">
+                                            <p class="mb-0">
+                                                Conheça a Cidade
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="text-center py-4">
+                                        <button class="btn btn-info rounded-4 border-0 p-2 px-4 fs-6 fw-semibold"
+                                            disabled>
+                                            <p class="mb-0">
+                                                Conheça a economia
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid bgBlue-100 p-0 pt-4 rounded-4 text-white text-sub">
+            <div class="container pb-4">
                 <div class="row">
                     <div class="col">
-                        <h5>Imprensa</h5>
-                        <p>Notícias</p>
-                        <p>Agenda da Cidade</p>
-                        <p>Galeria de Fotos</p>
-                        <p>Galeria de Vídeos</p>
-                        <h5>Contato</h5>
-                        <p>Ouvidoria E-SIC</p>
-                        <p>Telefones Úteis</p>
+                        <h5>Horário de Atendimento</h5>
+                        <p>Segunda à Sexta, 07h às 11h e das 13h às 17h</p>
                     </div>
                     <div class="col">
-                        <h5>Prefeitura</h5>
-                        <p>Equipe do Governo</p>
-                        <p>Fotos da Prefeitura</p>
-                        <p>Galeria de Prefeitos</p>
-                        <p>Conheça Nosso Prefeito</p>
-                        <p>Conheça Nosso Vice Prefeito</p>
-                        <p>Competência, estrutura e organizacional</p>
+                        <h5>Endereço</h5>
+                        <p>Rua das azaleias, 257 - Jardim Botânico - Sinop/MT</p>
                     </div>
                     <div class="col">
-                        <h5>Município</h5>
-                        <p>Economia</p>
-                        <p>Simbolos</p>
-                        <p>Como Chegar</p>
-                        <p>Galeria de Obras</p>
-                        <p>História do Município</p>
-                        <p>Hino, Bandeira e Brasão</p>
-                        <p>Conheça Nosso Município</p>
+                        <h5>Fale com a Prefeitura</h5>
+                        <p class="m-0">(66) 3535-3535</p>
+                        <p>(66) 9 9999-9999</p>
                     </div>
-                    <div class="col">
-                        <h5>Secretarias</h5>
-                        <p>Administração</p>
-                        <p>Agricultura e Desenvolvimento Economico Sustentável</p>
-                        <p>Assistência Social</p>
-                        <p>Educação</p>
-                        <p>Esportes</p>
-                        <p>Finanças</p>
-                        <p>Infraestrutura</p>
-                        <p>Meio Ambiente, Turismo e Cultura</p>
-                        <p>Planejamento, Tecnologia e Informática</p>
-                        <p>Saúde</p>
+                </div>
+            </div>
+            <div class="container-fluid bgBlue-200 py-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h5>Imprensa</h5>
+                            <p>Notícias</p>
+                            <p>Agenda da Cidade</p>
+                            <p>Galeria de Fotos</p>
+                            <p>Galeria de Vídeos</p>
+                            <h5>Contato</h5>
+                            <p>Ouvidoria E-SIC</p>
+                            <p>Telefones Úteis</p>
+                        </div>
+                        <div class="col">
+                            <h5>Prefeitura</h5>
+                            <p>Equipe do Governo</p>
+                            <p>Fotos da Prefeitura</p>
+                            <p>Galeria de Prefeitos</p>
+                            <p>Conheça Nosso Prefeito</p>
+                            <p>Conheça Nosso Vice Prefeito</p>
+                            <p>Competência, estrutura e organizacional</p>
+                        </div>
+                        <div class="col">
+                            <h5>Município</h5>
+                            <p>Economia</p>
+                            <p>Simbolos</p>
+                            <p>Como Chegar</p>
+                            <p>Galeria de Obras</p>
+                            <p>História do Município</p>
+                            <p>Hino, Bandeira e Brasão</p>
+                            <p>Conheça Nosso Município</p>
+                        </div>
+                        <div class="col">
+                            <h5>Secretarias</h5>
+                            <p>Administração</p>
+                            <p>Agricultura e Desenvolvimento Economico Sustentável</p>
+                            <p>Assistência Social</p>
+                            <p>Educação</p>
+                            <p>Esportes</p>
+                            <p>Finanças</p>
+                            <p>Infraestrutura</p>
+                            <p>Meio Ambiente, Turismo e Cultura</p>
+                            <p>Planejamento, Tecnologia e Informática</p>
+                            <p>Saúde</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
- 
-        <div></div>
-    </div>
+        <div class="container-fluid p-0 rounded-4">
+            <iframe class="rounded-bottom-4"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62471.877606757225!2d-55.5063804!3d-11.8707654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93a77fe80bc27573%3A0x1207800617733e83!2sSinop%2C%20MT!5e0!3m2!1spt-BR!2sbr!4v1679770003732!5m2!1spt-BR!2sbr"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="container py-4 ">
+            <div class="row align-content-center">
+                <div class="col-5 pt-2">
+                    <p>©Ano - Nome do cliente - Todos os direitos reservados.</p>
+                </div>
+                <div class="col offset-5">
+                    <img src="assets/Logo MPX.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
 </body>
 
 </html>

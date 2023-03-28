@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    font-family: 'Inter';
   }
 
 a {
@@ -48,7 +51,7 @@ a {
 .input {
   /* color: #000000; */
   border-radius: 12px;
-  width: 125px;
+  width: 145px;
 }
 
 .input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -70,6 +73,14 @@ a {
   height: 5.875rem !important;
 }
 
+.navbarItem1 :hover {
+  color: #01579b;
+}
+
+.navbarItem1 :hover path{
+  fill: #01579b;
+}
+
 .navbarItem1 figure {
   margin: 0;
 }
@@ -78,12 +89,48 @@ a {
   display: initial;
 }
 
+
+
+.slider .btnSlider:hover {
+  transform: scale(1.1);
+}
+
+.slider .btnSlider:active {
+  transform: scale(0.9);
+}
+
+.slider2 .btnSlider2:hover {
+  transform: scale(1.1);
+}
+
+.slider2 .btnSlider2:active {
+  transform: scale(0.9);
+}
+
+.slider3 .btnSlider3:hover {
+  transform: scale(1.1);
+}
+
+.slider3 .btnSlider3:active {
+  transform: scale(0.9);
+}
+
+.slider4 .btnSlider3:hover {
+  transform: scale(1.1);
+}
+
+.slider4 .btnSlider3:active {
+  transform: scale(0.9);
+}
+
 .btnSlider {
   height: 48px;
+  width: 48px;
   display: block;
   position: absolute;
   top: 50%;
   z-index: 99;
+  transition: transform .2s;
 }
 
 .btnSlider2 {
@@ -101,8 +148,9 @@ a {
   z-index: 99;
 }
 
+
 #btnEsq {
-left: 2%;
+  left: 2%;
 }
 
 #btnDir {
@@ -132,6 +180,16 @@ left: 2%;
 #btnDir4 {
   right: 2%;
 }
+
+.zoom-foto:hover img{
+  transform: scale(1.01);
+}
+
+.zoom-foto:hover figcaption{
+  text-decoration: underline;
+}
+
+
   
 .bgBlue-100 {
   background: #0277bd;
@@ -191,8 +249,6 @@ left: 2%;
 }
 
 .date-slider {
-  /* left: 30px; */
-  /* top: 30px; */
   border-radius: 12px;
   font-size: small;
   background:#4fc3f7;
@@ -223,29 +279,26 @@ left: 2%;
 }
 
 
-.snippet-ytb-lazy {
-  /* width: 450px; */
+.ytb {
   aspect-ratio: 16/9;
-  /* background-color: #000000; */
   border-radius: 25px;
   overflow: hidden;
 }
 
-.snippet-ytb-lazy .player, .snippet-ytb-lazy iframe { 
+.ytb .player, .ytb iframe { 
   position: relative;
   width: 100%;
   height: 100%;
   background-color: inherit;
 }
 
-.snippet-ytb-lazy .player {
+.ytb .player {
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
 .video {
-  position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
@@ -255,7 +308,12 @@ left: 2%;
 .img-video {
   width: 64px;
 }
+
+.slider-div{
+  height: 222px !important;
+}
   
+/* Parallax */
 
 #cidade {
   background-image: url(assets/cidade.png);
@@ -265,4 +323,42 @@ left: 2%;
   background-size: cover;
   width: 100%;
   height: 400px;
+}
+
+/* Navbar */
+
+.list :hover {
+  background-color: #01579b;
+}
+
+/* Noticias */
+
+.zoom :hover {
+  color: #01579b;
+}
+.zoom img:hover {
+  transform: scale(1.01);
+}
+
+.zoom :active {
+  color: black;
+}
+.zoom img:active {
+  transform: scale(1);
+}
+
+.zoom-evento:hover img{
+  transform: scale(1.01);
+}
+
+.zoom-evento:hover figcaption, .zoom-evento:hover p{
+  color: #01579b;
+}
+
+.colorb:hover {
+  color: #01579b;
+}
+
+.text-sub p:hover{
+  text-decoration:underline;
 }
