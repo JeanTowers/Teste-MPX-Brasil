@@ -4,7 +4,34 @@ $(function(){
         prevArrow: '<img src="assets/Btn-Esq.svg" class="btnSlider" id="btnEsq" alt="Anterior">',
         nextArrow: '<img src="assets/Btn-Dir.svg" class="btnSlider" id="btnDir" alt="Proximo">',
         dots: true,
-        dotsclass: "#dots"
+        dotsclass: "#dots",
+        responsive: [
+            {
+            breakpoint: 1200,
+                settings: {
+                    rows: 1,
+                    slidesToShow: 1,
+                }
+            },
+            {
+            breakpoint: 992,
+                settings: {
+                    rows:1,
+                    dots: true,
+                    arrows: false,
+                    slidesToShow: 1,
+                }
+            },
+            {
+            breakpoint: 768,
+                settings: {
+                    rows: 1,
+                    arrows: false,
+                    dots: true,
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 })
 
@@ -15,6 +42,30 @@ $(function(){
         infinite: true,
         prevArrow: '<img src="assets/Btn-Esq.svg" class="btnSlider2" id="btnEsq2" alt="Anterior">',
         nextArrow: '<img src="assets/Btn-Dir.svg" class="btnSlider2" id="btnDir2" alt="Proximo">',
+        responsive: [
+            {
+            breakpoint: 1200,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 4,
+                }
+            },
+            {
+            breakpoint: 992,
+                settings: {
+                    dots: true,
+                    slidesToShow: 2,
+                }
+            },
+            {
+            breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    slidesToShow: 1,
+                }
+            }
+        ]
         
     });
 })
@@ -27,6 +78,30 @@ $(function(){
         infinite: true,
         prevArrow: '<img src="assets/Btn-Esq.svg" class="btnSlider3" id="btnEsq3" alt="Anterior">',
         nextArrow: '<img src="assets/Btn-Dir.svg" class="btnSlider3" id="btnDir3" alt="Proximo">',
+        responsive: [
+            {
+            breakpoint: 1200,
+                settings: {
+                    arrows: true,
+                    slidesToShow: 4,
+                }
+            },
+            {
+            breakpoint: 992,
+                settings: {
+                    dots: true,
+                    slidesToShow: 3,
+                }
+            },
+            {
+            breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 })
 
@@ -38,6 +113,31 @@ $(function(){
         centerMode: true,
         prevArrow: '<img src="assets/Btn-Esq.svg" class="btnSlider3" id="btnEsq4" alt="Anterior">',
         nextArrow: '<img src="assets/Btn-Dir.svg" class="btnSlider3" id="btnDir4" alt="Proximo">',
+        responsive: [
+            {
+            breakpoint: 1200,
+                settings: {
+                    arrows: true,
+                    slidesToShow: 3,
+                }
+            },
+            {
+            breakpoint: 992,
+                settings: {
+                    dots: true,
+                    slidesToShow: 2,
+                    centerMode: false,
+                }
+            },
+            {
+            breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 })
 
