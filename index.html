@@ -37,42 +37,36 @@
                 <div class="col-12">
                     <ul class="nav nav-acessibilidade">
                         <li class="nav-item">
-                            <div class="BG">
-                                <a class="" href="">Aumentar fonte</a>
-                            </div>
+                            <a class="#" href="">Aumentar fonte</a>
                         </li>
                         <li class="nav-item">
-                            <div class="BG">
-                                <a href="">Alto Contraste</a>
-                            </div>
+                            <a href="#">Alto Contraste</a>
                         </li>
                         <li class="nav-item">
-                            <div class="BG">
-                                <a href="">Mapa do Site</a>
-                            </div>
+                            <a href="#">Mapa do Site</a>
                         </li>
                         <li class="nav-item">
-                            <div class="BG">
-                                <a href="">Fonte para dislexia</a>
-                            </div>
+                            <a href="#">Fonte para dislexia</a>
                         </li>
                         <li class="nav-item">
-                            <div class="BG">
-                                <a href="">Entenda a Acessibilidade</a>
-                            </div>
+                            <a href="#">Entenda a Acessibilidade</a>
                         </li>
                         <li class="nav-item">
-                            <div class="BG" role="search">
-                                <input class="input border-0 p-2 " type="search" placeholder="Pesquise no Site"
-                                    aria-label="Search">
-                                <button class="btn">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-search" viewBox="0 0 16 16">
-                                        <path
-                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                    </svg>
-                                </button>
-                            </div>
+                            <form action="Pesquisa/">
+                                <div class="col-12">
+                                    <div class="input-group " role="search">
+                                        <input class="input" type="search" placeholder="Pesquise no Site"
+                                            aria-label="Search">
+                                        <button class="btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
                         </li>
                     </ul>
                 </div>
@@ -691,9 +685,9 @@
         <div class="container">
             <div class="mb-32">
                 <span class="colorBlue h4 vinheta"><strong>
-                    Calendário de Eventos
-                </strong>
-            </span>
+                        Calendário de Eventos
+                    </strong>
+                </span>
             </div>
         </div>
         <div class="container-fluid borderImg">
@@ -832,20 +826,19 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid position-relative parallax">
-            <div class="container-fluid rounded-4" id="cidade"></div>
+        <div class="container-fluid position-relative rounded-4 parallax" id="cidade">
             <div class="container-fluid absolute">
                 <div class="row">
                     <div class="col-6  bg-white offset-5 rounded-bottom-4">
-                        <div>
+                        <div class="max">
                             <h1>Conheça a</h1>
                             <h1><strong>Melhor Cidade do Brasil</strong></h1>
                             <p>
                                 É a sua cidade! Onde tem tudo o que você precisa.
                             </p>
                             <div class="row justify-content-start">
-                                <div class="col">
-                                    <div class="text-center py-4">
+                                <div class="col-12 col-md-6">
+                                    <div class="text-center padding">
                                         <button class="btn btn-warning rounded-4 border-0 p-2 px-4 fs-6 fw-semibold">
                                             <p class="mb-0">
                                                 Conheça a Cidade
@@ -853,8 +846,8 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="text-center py-4">
+                                <div class="col-12 col-md-6">
+                                    <div class="text-center padding">
                                         <button class="btn btn-info rounded-4 border-0 p-2 px-4 fs-6 fw-semibold"
                                             disabled>
                                             <p class="mb-0">
@@ -871,30 +864,30 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div class="container-fluid bgBlue-100 p-0 pt-4 rounded-4 text-white text-sub">
-            <div class="container pb-4">
+    <footer class="container-fluid">
+        <div class="container-fluid bgBlue-100 footer rounded-4 text-white text-sub">
+            <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <h5>Horário de Atendimento</h5>
+                    <div class="col-12 col-md-4">
+                        <h4>Horário de Atendimento</h4>
                         <p>Segunda à Sexta, 07h às 11h e das 13h às 17h</p>
                     </div>
-                    <div class="col">
-                        <h5>Endereço</h5>
+                    <div class="col-12 col-md-4">
+                        <h4>Endereço</h4>
                         <p>Rua das azaleias, 257 - Jardim Botânico - Sinop/MT</p>
                     </div>
-                    <div class="col">
-                        <h5>Fale com a Prefeitura</h5>
+                    <div class="col-12 col-md-4">
+                        <h4>Fale com a Prefeitura</h4>
                         <p class="m-0">(66) 3535-3535</p>
                         <p>(66) 9 9999-9999</p>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid bgBlue-200 py-4">
+            <div class="container-fluid bgBlue-200 footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col">
-                            <h5>Imprensa</h5>
+                        <div class="col-12 col-md-3">
+                            <h4>Imprensa</h4>
                             <p>Notícias</p>
                             <p>Agenda da Cidade</p>
                             <p>Galeria de Fotos</p>
@@ -903,8 +896,8 @@
                             <p>Ouvidoria E-SIC</p>
                             <p>Telefones Úteis</p>
                         </div>
-                        <div class="col">
-                            <h5>Prefeitura</h5>
+                        <div class="col-12 col-md-3">
+                            <h4>Prefeitura</h4>
                             <p>Equipe do Governo</p>
                             <p>Fotos da Prefeitura</p>
                             <p>Galeria de Prefeitos</p>
@@ -912,8 +905,8 @@
                             <p>Conheça Nosso Vice Prefeito</p>
                             <p>Competência, estrutura e organizacional</p>
                         </div>
-                        <div class="col">
-                            <h5>Município</h5>
+                        <div class="col-12 col-md-3">
+                            <h4>Município</h4>
                             <p>Economia</p>
                             <p>Simbolos</p>
                             <p>Como Chegar</p>
@@ -922,8 +915,8 @@
                             <p>Hino, Bandeira e Brasão</p>
                             <p>Conheça Nosso Município</p>
                         </div>
-                        <div class="col">
-                            <h5>Secretarias</h5>
+                        <div class="col-12 col-md-3">
+                            <h4>Secretarias</h4>
                             <p>Administração</p>
                             <p>Agricultura e Desenvolvimento Economico Sustentável</p>
                             <p>Assistência Social</p>
@@ -939,24 +932,23 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid p-0 rounded-4">
+        <div class="rounded-4">
             <iframe class="rounded-bottom-4"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62471.877606757225!2d-55.5063804!3d-11.8707654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93a77fe80bc27573%3A0x1207800617733e83!2sSinop%2C%20MT!5e0!3m2!1spt-BR!2sbr!4v1679770003732!5m2!1spt-BR!2sbr"
                 width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
-        <div class="container py-4 ">
-            <div class="row align-content-center">
-                <div class="col-5 pt-2">
+        <div class="container">
+            <div class="row align-content-center rodape">
+                <div class="col-12 col-md-6 pt-2">
                     <p>©Ano - Nome do cliente - Todos os direitos reservados.</p>
                 </div>
-                <div class="col offset-5">
+                <div class="col-12 col-md-6 end">
                     <img src="assets/Logo MPX.svg" alt="">
                 </div>
             </div>
-
         </div>
-
     </footer>
 </body>
 
